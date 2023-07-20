@@ -28,7 +28,7 @@ resource "docker_container" "database" {
 # Criação do container do servidor web Apache
 resource "docker_container" "webserver" {
   name    = "laravel-web"
-  image   = "php:7.4-apache"
+  image   = "php:8.0-apache"
   restart = "unless-stopped"
   ports {
     internal = 80
